@@ -20,31 +20,29 @@ public class AbstractContainerScreenMixin {
     protected AbstractContainerMenu menu;
     @Shadow
     protected Slot hoveredSlot;
-    @Shadow
-    private ItemStack draggingItem;
 
     @Inject(at = @At("RETURN"), method = "extractContents")
     private void handleSlotCursor(GuiGraphicsExtractor graphics, int mouseX, int mouseY, float a, CallbackInfo ci) {
         if (hoveredSlot == null) return;
-        
-        ItemStack cursorItem = draggingItem.isEmpty() ? menu.getCarried() : draggingItem;
-        if (!cursorItem.isEmpty()) {
-            if (hoveredSlot.mayPlace(cursorItem)) {
-                // dragging item & can be placed here
+
+        ItemStack carriedItem = menu.getCarried();
+        if (!carriedItem.isEmpty()) {
+            if (hoveredSlot.mayPlace(carriedItem)) {
+                // carrying item & can be placed here
                 graphics.requestCursor(CursorTypes.POINTING_HAND);
             }
             else {
                 ItemStack slotItem = hoveredSlot.getItem();
                 if (!slotItem.isEmpty()) {
-                    // dragging item, can not be placed here but may pick up items
+                    // carrying item, can not be placed here but may pick up items
                     graphics.requestCursor(
-                        ItemStack.isSameItemSameComponents(cursorItem, slotItem)
-                            && cursorItem.getCount() < cursorItem.getMaxStackSize()
-                        ? CursorTypes.POINTING_HAND : CursorTypes.NOT_ALLOWED
+                        ItemStack.isSameItemSameComponents(carriedItem, slotItem)
+                            && carriedItem.getCount() < carriedItem.getMaxStackSize()
+                            ? CursorTypes.POINTING_HAND : CursorTypes.NOT_ALLOWED
                     );
                 }
                 else {
-                    // dragging item, can not be placed here & no items to pick up
+                    // carrying item, can not be placed here & no items to pick up
                     graphics.requestCursor(CursorTypes.NOT_ALLOWED);
                 }
             }
