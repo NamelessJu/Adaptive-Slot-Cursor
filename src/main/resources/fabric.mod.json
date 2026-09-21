@@ -3,15 +3,18 @@
     "id": "adaptive-slot-cursor",
     "version": "${version}",
     "name": "Adaptive Slot Cursor",
-    "description": "Changes the cursor based on hovering or dragging items in inventories",
+    "description": "Changes the cursor based on hovering slots or dragging items in inventories",
     "authors": ["NamelessJu"],
     "contact": {
         "sources": "https://github.com/NamelessJu/Adaptive-Slot-Cursor"
     },
-    "license": "MIT",
+    "license": "LGPL-3.0-or-later",
     "icon": "assets/adaptive-slot-cursor/icon.png",
     "environment": "client",
-    "entrypoints": {},
+    "entrypoints": {
+        "client": [ "namelessju.adaptiveslotcursor.AdaptiveSlotCursor" ],
+        "modmenu": [ "namelessju.adaptiveslotcursor.impl.ModMenuApiImpl" ]
+    },
     "mixins": [
         {
             "config": "adaptive-slot-cursor.client.mixins.json",
@@ -19,8 +22,12 @@
         }
     ],
     "depends": {
-        "fabricloader": ">=0.19.3",
+        "fabricloader": ">=0.19.5",
         "minecraft": ">=26.2",
         "java": ">=25"
+    },
+    "suggests": {
+        "modmenu": ">=20.0.2",
+        "yet_another_config_lib_v3": ">=3.9.7"
     }
 }

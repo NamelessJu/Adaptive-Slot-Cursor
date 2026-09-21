@@ -1,0 +1,21 @@
+{
+    "adaptiveSlotCursor.cursorType.default": "Standard",
+    "adaptiveSlotCursor.cursorType.pointingHand": "Zeigende Hand",
+    "adaptiveSlotCursor.cursorType.crosshair": "Fadenkreuz",
+    "adaptiveSlotCursor.cursorType.resizeAll": "Größe In Alle Richtungen Ändern",
+    "adaptiveSlotCursor.cursorType.notAllowed": "Nicht Erlaubt",
+
+    "adaptiveSlotCursor.configScreen.title": "%s Einstellungen",
+    "adaptiveSlotCursor.configScreen.option.modEnabled": "Mod Aktiviert:",
+    "adaptiveSlotCursor.configScreen.option.modEnabled.description": "Ein globaler Schalter für alle Mauszeiger dieser Mod.\n\nHinweis: die Mod funktioniert nur, wenn \"Dynamischer Mauszeiger\" in Minecraft's Mauseinstellungen aktiviert ist!",
+    "adaptiveSlotCursor.configScreen.option.cursorTypeEmptyCursorAndItemHovered": "Mauszeiger Für Ausgewählten Gegenstand:",
+    "adaptiveSlotCursor.configScreen.option.cursorTypeEmptyCursorAndItemHovered.description": "Der Mauszeiger, der genutzt werden soll, wenn kein Gegenstand getragen wird und ein Platz mit einem Gegenstand darin ausgewählt ist",
+    "adaptiveSlotCursor.configScreen.option.cursorTypeCarryingItem": "Mauszeiger Für Getragenen Gegenstand:",
+    "adaptiveSlotCursor.configScreen.option.cursorTypeCarryingItem.description": "Der Basis-Mauszeiger, der genutzt werden soll, wenn ein Gegenstand getragen wird (kann durch die nachfolgenden Einstellungen überschrieben werden)",
+    "adaptiveSlotCursor.configScreen.option.cursorTypeCarryingItemAndCanPlaceInSlot": "Mauszeiger Für Platzierbaren Gegenstand:",
+    "adaptiveSlotCursor.configScreen.option.cursorTypeCarryingItemAndCanPlaceInSlot.description": "Der Mauszeiger, der genutzt werden soll, wenn ein Gegenstand getragen wird und im ausgewählten Platz platziert werden kann",
+    "adaptiveSlotCursor.configScreen.option.cursorTypeCarryingItemAndCannotPlaceInSlot": "Mauszeiger Für Nicht-Platzierbaren Gegenstand:",
+    "adaptiveSlotCursor.configScreen.option.cursorTypeCarryingItemAndCannotPlaceInSlot.description": "Der Mauszeiger, der genutzt werden soll, wenn ein Gegenstand getragen wird und nicht im ausgewählten Platz platziert werden kann",
+    "adaptiveSlotCursor.configScreen.option.cursorTypeCarryingItemAndSlotCanBePickedUp": "Mauszeiger Für Nur Gegenstand Aufnehmen:",
+    "adaptiveSlotCursor.configScreen.option.cursorTypeCarryingItemAndSlotCanBePickedUp.description": "Der Mauszeiger, der genutzt werden soll, wenn ein Gegenstand getragen wird und nicht im ausgewählten Platz platziert werden kann, aber passende Gegenstände aus diesem Platz aufgesammelt werden können"
+}

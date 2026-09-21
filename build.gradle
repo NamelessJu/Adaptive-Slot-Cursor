@@ -24,9 +24,23 @@ loom {
     }
 }
 
+repositories {
+    maven {
+        name = "Terraformers"
+        url = "https://maven.terraformersmc.com/"
+    }
+    maven {
+        name 'Xander Maven'
+        url 'https://maven.isxander.dev/releases'
+    }
+}
+
 dependencies {
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
 	implementation "net.fabricmc:fabric-loader:${project.loader_version}"
+
+    implementation "com.terraformersmc:modmenu:${project.modmenu_version}"
+    implementation "dev.isxander:yet-another-config-lib:${project.yacl_version}"
 }
 
 processResources {

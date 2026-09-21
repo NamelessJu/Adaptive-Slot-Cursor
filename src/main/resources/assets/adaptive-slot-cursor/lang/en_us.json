@@ -1,0 +1,21 @@
+{
+    "adaptiveSlotCursor.cursorType.default": "Default",
+    "adaptiveSlotCursor.cursorType.pointingHand": "Pointing Hand",
+    "adaptiveSlotCursor.cursorType.crosshair": "Crosshair",
+    "adaptiveSlotCursor.cursorType.resizeAll": "Resize All",
+    "adaptiveSlotCursor.cursorType.notAllowed": "Not Allowed",
+
+    "adaptiveSlotCursor.configScreen.title": "%s Settings",
+    "adaptiveSlotCursor.configScreen.option.modEnabled": "Mod Enabled:",
+    "adaptiveSlotCursor.configScreen.option.modEnabled.description": "A global toggle for all of the cursors of this mod.\n\nNote: the mod only works if \"Allow Cursor Changes\" in Minecraft's Mouse Settings is enabled!",
+    "adaptiveSlotCursor.configScreen.option.cursorTypeEmptyCursorAndItemHovered": "Hovered Item Cursor:",
+    "adaptiveSlotCursor.configScreen.option.cursorTypeEmptyCursorAndItemHovered.description": "The cursor to use when no item is carried and a slot with an item is hovered",
+    "adaptiveSlotCursor.configScreen.option.cursorTypeCarryingItem": "Carried Item Cursor:",
+    "adaptiveSlotCursor.configScreen.option.cursorTypeCarryingItem.description": "The base cursor to use when an item is carried (may be replaced by the settings below)",
+    "adaptiveSlotCursor.configScreen.option.cursorTypeCarryingItemAndCanPlaceInSlot": "Placeable Item Cursor:",
+    "adaptiveSlotCursor.configScreen.option.cursorTypeCarryingItemAndCanPlaceInSlot.description": "The cursor to use when an item is carried and it can be placed in the hovered slot",
+    "adaptiveSlotCursor.configScreen.option.cursorTypeCarryingItemAndCannotPlaceInSlot": "Cannot Place Item Cursor:",
+    "adaptiveSlotCursor.configScreen.option.cursorTypeCarryingItemAndCannotPlaceInSlot.description": "The cursor to use when an item is carried and it cannot be placed in the hovered slot",
+    "adaptiveSlotCursor.configScreen.option.cursorTypeCarryingItemAndSlotCanBePickedUp": "Pickup Only Cursor:",
+    "adaptiveSlotCursor.configScreen.option.cursorTypeCarryingItemAndSlotCanBePickedUp.description": "The cursor to use when an item is carried and it cannot be placed in the hovered slot, but matching items can be picked up from that slot"
+}
