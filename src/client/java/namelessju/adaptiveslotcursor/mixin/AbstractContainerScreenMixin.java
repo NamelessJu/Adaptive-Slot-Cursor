@@ -24,7 +24,13 @@ public class AbstractContainerScreenMixin
     @Shadow
     protected @Nullable Slot hoveredSlot;
 
-    @Inject(at = @At("RETURN"), method = "extractContents")
+    @Inject(at = @At("RETURN"),
+        //? >= 26.1 {
+        method = "extractContents"
+        //? } else {
+        /*method = "renderContents"
+        *///? }
+    )
     private void handleSlotCursor(GuiGraphicsExtractor graphics, int mouseX, int mouseY, float a, CallbackInfo ci)
     {
         Config config = AdaptiveSlotCursor.instance().config;

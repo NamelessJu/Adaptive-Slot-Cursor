@@ -1,0 +1,19 @@
+mod.id = "adaptive-slot-cursor"
+mod.name = "Adaptive Slot Cursor"
+mod.group = "namelessju.adaptiveslotcursor"
+mod.version = "2.0"
+
+deps.fabric_loader = "0.19.5"
+loomx.loom_version = "1.17-SNAPSHOT"
+
+["26.3"]
+mod.mc_compat = ">=26.1"
+mod.mc_releases = ["26.3", "26.2", "26.1.2", "26.1.1", "26.1"]
+deps.modmenu = "21.0.0"
+deps.yacl = "3.9.7+26.3-fabric"
+
+["1.21.11"]
+mod.mc_compat = ">=1.21.9 <=1.21.11"
+mod.mc_releases = ["1.21.9", "1.21.10", "1.21.11"]
+deps.modmenu = "17.0.1"
+deps.yacl = "3.8.1+1.21.11-fabric"
